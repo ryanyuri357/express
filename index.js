@@ -35,18 +35,11 @@ console.log("Mail Password: " + config.get("mail.password"));
 // Environment check
 if (app.get("env") === "development") {
   app.use(morgan("tiny"));
-  debug("Morgan enabled..."); // console out
+  debug("Morgan enabled..."); // console log
 }
-
-// Bd work...
-//dbDebugger("Connected to the database...");
 
 //  More middleware
 app.use(logger);
-// app.use(function (req, res, next) {
-//   console.log("Authenticating...");
-//   next();
-// });
 
 // Listener
 const port = process.env.PORT || 3000; // Look for PORT Environment Variable ('set' cmd)

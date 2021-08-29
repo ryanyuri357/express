@@ -9,9 +9,9 @@ const Joi = require("joi");
 
 // Courses Object Array (for dev)
 const courses = [
-  { id: 1, name: "course1" },
-  { id: 2, name: "course2" },
-  { id: 3, name: "course3" },
+  { id: 1, name: "Algebra 101" },
+  { id: 2, name: "Physics 101" },
+  { id: 3, name: "Anthropology 101" },
 ];
 
 // GET courses
